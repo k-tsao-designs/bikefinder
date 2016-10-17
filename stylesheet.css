@@ -1,0 +1,106 @@
+.page {
+	width: 1042px;
+	margin: auto;
+	position: relative;
+}
+
+.page:hover a {
+	/*looking for anchor tags when page is hovered*/
+		background-color: rgba(155,225,249,0.5);
+	/*measures red, green, blue, alpha aka transparency*/
+}
+
+img {
+	width: 100%;
+	/*saying image is 100% width of container, in this case, .page*/
+}
+
+a {
+	position: absolute;
+	text-indent: -9999px;
+	/*hack for hiding text that don't want user to see but want in site so that Google can read it*/
+	transition: background-color 0.3s;
+}
+
+/*types of positioning: fixed, absolute, relative, static
+static is default (anything not static turns into a positioning parent)
+relative controls relative to where otherwise would have been
+	but also even if doesn't give instructions, also means it is a positioning parent
+absolute means no positioning if you don't say it (within context of positioning parent)
+fixed is in comparison to whole browser*/
+
+/*Quickcycle logo*/
+a.btn-home-page {
+	top: 30px;
+	left: 40px;
+	width: 120px;
+	height: 24px;
+}
+
+/*Bikes in header bar*/
+a.btn-bike-search-header {
+	top: 89px;
+	left: 125px;
+	width: 48px;
+	height: 25px;
+}
+
+/*Back to bikes from category filter*/
+a.btn-bike-search {
+	top: 160px;
+	left: 272px;
+	width: 55px;
+	height: 24px;
+}
+
+/*from bike search (left filter sidebar) to kids bikes*/
+a.btn-bike-category {
+	top: 236px;
+	left:190px;
+	width: 15px;
+	height: 15px;
+}
+
+/*from category 2-4 page back to category*/
+a.btn-bike-category-back {
+	top: 160px;
+	left: 360px;
+	width: 45px;
+	height: 24px;
+}
+
+/*applies to search and category pages; click Emonda*/
+a.btn-bike-detail {
+	top: 250px;
+	left: 520px;
+	width: 205px;
+	height: 200px;
+}
+
+/*applies to search and category pages; double arrow to see all filters*/
+a.btn-all-filters {
+	top: 200px;
+	left: 182px;
+	width: 23px;
+	height: 23px;
+}
+
+/*from category page to drop down menu only*/
+	a.btn-sort-order {
+		top: 200px;
+		left: 740px;
+		width: 100px;
+		height: 24px;
+	}
+
+/*applies to detail pages; back button*/
+a.btn-return-to-bikes {
+	top: 165px;
+	left: 32px;
+	width: 125px;
+	height: 26px;
+}
+
+
+
+
